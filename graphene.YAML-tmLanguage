@@ -1,0 +1,86 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Graphene
+scopeName: source.Graphene
+fileTypes: ["gp"]
+uuid: 686644c4-eada-4536-a11e-e8726c33391a
+
+patterns:
+# All keywords are case-insensitive and whole words
+
+# ----------------------- Utilities ---------------------- #
+- comment: EXIT/QUIT keyword
+  name: keyword.exit.Graphene
+  match: (?i)\b(EXIT|QUIT)\b
+- comment: HELP keyword
+  name: keyword.help.Graphene
+  match: (?i)\b(HELP)\b
+- comment: EXIT/QUIT keyword
+  name: keyword.exit.Graphene
+  match: (?i)\b(EXIT|QUIT)\b
+
+# ------------------------- Query ------------------------ #
+- comment: MATCH keyword
+  name: keyword.match.Graphene
+  match: (?i)\b(MATCH)\b
+- comment: RETURN keyword
+  name: keyword.return.Graphene
+  match: (?i)\b(RETURN)\b
+- comment: LIMIT keyword
+  name: keyword.limit.Graphene
+  match: (?i)\b(LIMIT)\b
+- comment: ORDER BY keyword
+  name: keyword.orderby.Graphene
+  match: (?i)\b(ORDER|BY)\b
+- comment: AND keyword
+  name: keyword.and.Graphene
+  match: (?i)\b(AND)\b
+- comment: OR keyword
+  name: keyword.or.Graphene
+  match: (?i)\b(OR)\b
+- comment: WHERE keyword
+  name: keyword.where.Graphene
+  match: (?i)\b(WHERE)\b
+- comment: ASC/DESC keywords
+  name: keyword.asc_desc.Graphene
+  match: (?i)\b(ASC|DESC)\b
+
+# -------------------- Data Definition ------------------- #
+- comment: CREATE TYPE/RELATION keywords
+  name: keyword.create.Graphene
+  match: (?i)\b(CREATE|TYPE|RELATION)\b
+- comment: SHOW TYPES/RELATION keywords
+  name: keyword.show.Graphene
+  match: (?i)\b(SHOW|TYPES|RELATIONS)\b
+- comment: DELETE keyword
+  name: keyword.delete.Graphene
+  match: (?i)\b(DELETE)\b
+- comment: DROP keyword
+  name: keyword.drop.Graphene
+  match: (?i)\b(DROP)\b
+- comment: INSERT NODE/RELATION keyword
+  name: keyword.insert.Graphene
+  match: (?i)\b(INSERT|NODE|RELATION)\b
+- comment: UPDATE/SET keywords
+  name: keyword.update.Graphene
+  match: (?i)\b(UPDATE|SET)\b
+
+# ------------------------- Types ------------------------ #
+- comment: Primitive types
+  name: storage.type.primitive.Graphene
+  match: \b(int|long|bool|short|char|float|double|string)\b
+
+# ----------------------- Constants ---------------------- #
+- comment: Boolean literals
+  name: constant.language.Graphene
+  match: (?i)\b(True|False)\b
+- comment: Integer literals
+  name: constant.numeric.integer.Graphene
+  match: \b[0-9]+\b
+- comment: All Symbols
+  name: constant.character.symbols
+  match: (-|>|<|\(|\)|\.|;|:|\[|\]|=|!=)
+
+# TODO: comments?
+# TODO: String literals
+# TODO: Testing with gp files

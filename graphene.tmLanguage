@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>gp</string>
+	</array>
+	<key>name</key>
+	<string>Graphene</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>EXIT/QUIT keyword</string>
+			<key>match</key>
+			<string>(?i)\b(EXIT|QUIT)\b</string>
+			<key>name</key>
+			<string>keyword.exit.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>HELP keyword</string>
+			<key>match</key>
+			<string>(?i)\b(HELP)\b</string>
+			<key>name</key>
+			<string>keyword.help.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>EXIT/QUIT keyword</string>
+			<key>match</key>
+			<string>(?i)\b(EXIT|QUIT)\b</string>
+			<key>name</key>
+			<string>keyword.exit.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>MATCH keyword</string>
+			<key>match</key>
+			<string>(?i)\b(MATCH)\b</string>
+			<key>name</key>
+			<string>keyword.match.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>RETURN keyword</string>
+			<key>match</key>
+			<string>(?i)\b(RETURN)\b</string>
+			<key>name</key>
+			<string>keyword.return.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>LIMIT keyword</string>
+			<key>match</key>
+			<string>(?i)\b(LIMIT)\b</string>
+			<key>name</key>
+			<string>keyword.limit.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>ORDER BY keyword</string>
+			<key>match</key>
+			<string>(?i)\b(ORDER|BY)\b</string>
+			<key>name</key>
+			<string>keyword.orderby.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>AND keyword</string>
+			<key>match</key>
+			<string>(?i)\b(AND)\b</string>
+			<key>name</key>
+			<string>keyword.and.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>OR keyword</string>
+			<key>match</key>
+			<string>(?i)\b(OR)\b</string>
+			<key>name</key>
+			<string>keyword.or.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>WHERE keyword</string>
+			<key>match</key>
+			<string>(?i)\b(WHERE)\b</string>
+			<key>name</key>
+			<string>keyword.where.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>ASC/DESC keywords</string>
+			<key>match</key>
+			<string>(?i)\b(ASC|DESC)\b</string>
+			<key>name</key>
+			<string>keyword.asc_desc.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>CREATE TYPE/RELATION keywords</string>
+			<key>match</key>
+			<string>(?i)\b(CREATE|TYPE|RELATION)\b</string>
+			<key>name</key>
+			<string>keyword.create.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>SHOW TYPES/RELATION keywords</string>
+			<key>match</key>
+			<string>(?i)\b(SHOW|TYPES|RELATIONS)\b</string>
+			<key>name</key>
+			<string>keyword.show.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>DELETE keyword</string>
+			<key>match</key>
+			<string>(?i)\b(DELETE)\b</string>
+			<key>name</key>
+			<string>keyword.delete.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>DROP keyword</string>
+			<key>match</key>
+			<string>(?i)\b(DROP)\b</string>
+			<key>name</key>
+			<string>keyword.drop.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>INSERT NODE/RELATION keyword</string>
+			<key>match</key>
+			<string>(?i)\b(INSERT|NODE|RELATION)\b</string>
+			<key>name</key>
+			<string>keyword.insert.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>UPDATE...SET keywords</string>
+			<key>match</key>
+			<string>(?i)\b(UPDATE|SET)\b</string>
+			<key>name</key>
+			<string>keyword.update.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Primitive types</string>
+			<key>match</key>
+			<string>\b(int|long|bool|short|char|float|double|string)\b</string>
+			<key>name</key>
+			<string>storage.type.primitive.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Boolean literals</string>
+			<key>match</key>
+			<string>(?i)\b(True|False)\b</string>
+			<key>name</key>
+			<string>constant.language.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Integer literals</string>
+			<key>match</key>
+			<string>\b[0-9]+\b</string>
+			<key>name</key>
+			<string>constant.numeric.integer.Graphene</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>All Symbols</string>
+			<key>match</key>
+			<string>(-|&gt;|&lt;|\(|\)|\.|;|:|\[|\]|=|!=)</string>
+			<key>name</key>
+			<string>constant.character.symbols</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.Graphene</string>
+	<key>uuid</key>
+	<string>686644c4-eada-4536-a11e-e8726c33391a</string>
+</dict>
+</plist>
